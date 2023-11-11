@@ -18,6 +18,10 @@ public class StudentTest {
         s2.age = 23;
         System.out.println(s1.name + " " + s2.age);
         System.out.println(s2.name + " " + s2.age);
+
+        s1.sayHello();
+        s.sayHello();
+        s2.sayHello();
     }
     
 
