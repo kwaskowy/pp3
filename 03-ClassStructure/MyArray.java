@@ -44,21 +44,15 @@ public class MyArray {
         }
         return wartosc;
     }
-    public static boolean different(int[] array1, int[] array2){
-        
-    }
     public static boolean exists(int number, int[] array){
         int len = array.length;
-        int wartosc = 0;
         for (int i = 0;i<len;i++){
             if (array[i]==number){
-                wartosc++;
-            }else{
-                wartosc+=0;
+                return true;
             }
+            }
+        return false;
         }
-        return len==wartosc;
-    }
     public static int secondMax(int[] array){
         int firstMax= -2137;
         int secondMax= -2137;
@@ -69,20 +63,20 @@ public class MyArray {
             }
         }
         for (int i = 0;i<len;i++){
-            if (array[i]>secondMax && secondMax<firstMax){
+            if (array[i]>secondMax && array[i]!=firstMax){
                 secondMax= array[i];
-            }
+            } 
+            
         }
         return secondMax;
     }
-    public static int lastColumn(int[][] array1){
-        
-    }
-    public static int[][] swap(int[][] array1){
-        
-    }
-    public static int[] twoToOne(int[][] array){
+    public static int lastColumn(int[][] array) {
+        int ostatniaKolumnaIndex = array[0].length - 1;
+        int suma = 0;
+        for (int i = 0; i < array.length; i++) {
+            suma += array[i][ostatniaKolumnaIndex];
+        }
 
+        return suma;
     }
-    
 }
