@@ -15,9 +15,4 @@ public class Warrior {
     public void setShielded(boolean shielded) {
         this.shielded = shielded;
     }
-    
-
-    
-
-    
 }
